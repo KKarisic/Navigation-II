@@ -1,0 +1,37 @@
+i.icon {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  min-width: 0.5rem;
+  min-height: 0.5rem;
+  display: inline-block;
+
+  &.icon-logo {
+    mask: url('../img/icons/auma_r.svg') no-repeat center / contain;
+    -webkit-mask: url('../img/icons/auma_r.svg') no-repeat center / contain;
+  }
+  &.icon-search {
+    mask: url('../img/icons/search.svg') no-repeat center / contain;
+    -webkit-mask: url('../img/icons/search.svg') no-repeat center / contain;
+  }
+  &.icon-wrench {
+    mask: url('../img/icons/wrench.svg') no-repeat center / contain;
+    -webkit-mask: url('../img/icons/wrench.svg') no-repeat center / contain;
+  }
+  &.icon-arrow-right {
+    mask: url('../img/icons/arrow-right.svg') no-repeat center / contain;
+    -webkit-mask: url('../img/icons/arrow-right.svg') no-repeat center / contain;
+  }
+  &.icon-arrow-left {
+    mask: url('../img/icons/arrow-left.svg') no-repeat center / contain;
+    -webkit-mask: url('../img/icons/arrow-left.svg') no-repeat center / contain;
+  }
+  &.icon-exit {
+    mask: url('../img/icons/x.svg') no-repeat center / contain;
+    -webkit-mask: url('../img/icons/x.svg') no-repeat center / contain;
+  }
+  &.icon-arrow-up {
+    mask: url('../img/icons/arrow-bar-up.svg') no-repeat center / contain;
+    -webkit-mask: url('../img/icons/arrow-bar-up.svg') no-repeat center / contain;
+  }
+}

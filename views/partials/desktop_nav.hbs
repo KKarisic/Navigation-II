@@ -1,0 +1,435 @@
+<header class='hidden md:block'>
+  <div class='topbar px-10 text-sm bg-gray-200 flex justify-end items-center gap-2 py-2.5 duration-300'>
+    <button>Profil</button>
+    <button>Kaminofen</button>
+    <button>Karriere</button>
+    <button>Uber Schiedel</button>
+    <button>language</button>
+  </div>
+
+  <div class='main-nav fixed z-20 w-full px-6 pt-6 h-[144px] flex justify-between gap-10 bg-white duration-300'>
+    <div class='logo-form-nav flex justify-start gap-10'>
+      <div class='logo duration-300 logo-image'>
+        <img src='../img/brand-logo.jpg' alt='this is logo' class='object-fit relative' />
+      </div>
+      <div class='search-nav flex flex-col gap-5'>
+        <div class='search'>
+          <form class='search-form duration-300 h-11 overflow-hidden'>
+            <div class='flex bg-gray-200 rounded-xl min-h-[44px] mb-6'>
+              <div class='flex w-1/5 min-w-[120px] max-w-full gap-1 input-wrapper'>
+                <div class='dropdown w-full'>
+                  <select id='form-option' class='w-full h-full bg-gray-700 text-white rounded-l-lg' required>
+                    <option class='' value='0'>All</option>
+                    <option class='' value='1'>Selector 1</option>
+                    <option class='' value='2'>Selector 2</option>
+                    <option class='' value='3'>Selector 3</option>
+                    <option class='' value='4'>Selector 4</option>
+                  </select>
+                </div>
+              </div>
+              <div class='relative flex items-center flex-1 rounded-r-lg bg-gray-10'>
+                <input
+                  type='text'
+                  placeholder='Search'
+                  class='w-full h-full pl-4 pr-8 text-xs bg-transparent placeholder:text-dark focus:outline-none'
+                />
+                <div class='absolute right-3'>
+                  <i class='icon icon-search bg-black w-4 h-4 flex justify-center'></i>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <nav class='navbar transition-all duration-150 font-bold'>
+          <ul class='flex justify-between gap-10 items-center'>
+            <li id='item-1' class='li-btn hover:text-orange-400'><button class='flex'>Products</button></li>
+            <li id='item-2' class='li-btn hover:text-orange-400'><button class='flex'>Applications &amp; Industries</button></li>
+            <li id='item-3' class='li-btn hover:text-orange-400'><button
+                class='flex justify-between items-center gap-2'
+              >Services</button></li>
+            <li id='item-4' class='li-btn hover:text-orange-400'><button class='flex items-center gap-2'><i
+                  class='icon icon-wrench bg-black w-4 h-4'
+                ></i>For Professionals</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class='button contact-advice'><button
+        class='contact-advice-button uppercase px-6 h-[50px] rounded-xl font-bold border-2 border-orange-400'
+      >Contact &amp; advice</button></div>
+  </div>
+
+  <div
+    class='drop-menu relative top-[144px] px-6 mb-44 bg-white h-0 w-full overflow-hidden transition-all duration-300'
+  >
+    <div id='menu-item-1' class='overflow-hidden hidden relative pb-10 pt-24 transition-all duration-300'>
+      <div class='exit bg-white flex justify-end pb-8 duration-300'>
+        <i class='icon icon-exit bg-black w-8 h-8'></i>
+      </div>
+      <div class='second-level shrink-0 flex items-start gap-32 py-5 bg-white border-t border-black'>
+        <ul class='second-level-ul w-1/5 flex flex-col justify-between gap-4'>
+          <li class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'><button>Product
+              1
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+          <li class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'><button>Product
+              2
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+          <li class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'><button>Product
+              3
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+
+          <li class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'><button>Product
+              4
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+          <li class='font-bold text-lg text-white bg-gray-700 px-3 py-4 cursor-pointer'><button
+              class='flex items-center gap-3'
+            >
+              <i class='icon icon-search bg-white w-4 h-4'></i>
+              Product Finder</button>
+          </li>
+        </ul>
+        <div class='second-level-img flex flex-col gap-5'>
+          <h2 class='text-black text-lg font-bold'>We launched our new App</h2>
+          <div class='li-nav-img w-[400px] h-44'>
+            <img src='../img/nav-pic-1.webp' alt='picture one' class='w-full h-full object-cover rounded-2xl' />
+          </div>
+          <button
+            class='uppercase text-left bg-transparent w-max py-3 px-5 rounded-xl font-bold border-2 text-black border-orange-600'
+          >Read more</button>
+        </div>
+
+      </div>
+
+      <div
+        class='third-level w-full h-full shrink-0 absolute mt-[86px] left-0 top-[72px] transition-all duration-150 translate-x-full flex justify-start items-start gap-10 py-5 bg-white border-t border-black'
+      >
+
+        <div
+          class='back-arrow cursor-pointer font-bold absolute left-0 -top-[63px] items-center text-black gap-1 bg-white'
+        ><i class='icon icon-arrow-left bg-black w-8 h-8'></i>
+          Back to
+          <span class='back-pointer mr-6'> pointer</span>
+          <span class='current-pointer font-normal'> current</span></div>
+        <div class='third-level-part flex flex-col gap-6'>
+          <h4 class='font-bold'>Product Type 1</h4>
+          <div class='product-img w-52 h-28 rounded-xl'><img
+              src='../img/product-type2.jpeg'
+              alt='product2'
+              class='rounded-xl object-cover w-full h-full'
+            /></div>
+          <div class='product-list flex flex-col gap-1'>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+          </div>
+        </div>
+
+        <div class='third-level-part flex flex-col gap-6'>
+          <h4 class='font-bold'>Product Type 2</h4>
+          <div class='product-img w-52 h-28 rounded-xl'><img
+              src='../img/product-type2.jpeg'
+              alt='product2'
+              class='rounded-xl object-cover w-full h-full'
+            /></div>
+          <div class='product-list flex flex-col gap-1'>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+          </div>
+        </div>
+
+        <div class='third-level-part flex flex-col gap-6'>
+          <h4 class='font-bold'>Product Type 3</h4>
+          <div class='product-img w-52 h-28 rounded-xl'><img
+              src='../img/product-type2.jpeg'
+              alt='product2'
+              class='rounded-xl object-cover w-full h-full'
+            /></div>
+          <div class='product-list flex flex-col gap-1'>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id='menu-item-2' class='overflow-hidden hidden relative pb-10 pt-24 transition-all duration-300'>
+      <div class='exit bg-white flex justify-end pb-8'>
+        <i class='icon icon-exit bg-black w-8 h-8'></i>
+      </div>
+      <div
+        class='second-level shrink-0 flex items-start gap-32 py-5 bg-white border-t border-black transition-all duration-700'
+      >
+        <ul class='second-level-ul w-1/5 flex flex-col justify-between gap-4'>
+          <li class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'><button>Product
+              1
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+          <li class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'><button>Product
+              2
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+
+        </ul>
+        <div class='second-level-img flex flex-col gap-5'>
+          <h2 class='text-black text-lg font-bold'>We launched our new App</h2>
+          <div class='li-nav-img w-[400px] h-44'>
+            <img src='../img/nav-pic-1.webp' alt='picture one' class='w-full h-full object-cover rounded-2xl' />
+          </div>
+          <button
+            class='uppercase text-left bg-transparent w-max py-3 px-5 rounded-xl font-bold border-2 text-black border-orange-600'
+          >Read more</button>
+        </div>
+
+      </div>
+
+      <div
+        class='third-level w-full shrink-0 h-full absolute mt-[86px] left-0 top-[72px] transition-all duration-150 translate-x-full flex justify-start items-start gap-10 py-5 bg-white border-t border-black'
+      >
+        <div
+          class='back-arrow cursor-pointer font-bold absolute left-0 -top-[63px] items-center text-black gap-1 bg-white'
+        ><i class='icon icon-arrow-left bg-black w-8 h-8'></i>
+          Back to
+          <span class='back-pointer mr-6'> pointer</span>
+          <span class='current-pointer font-normal'> current</span></div>
+        <div class='third-level-part flex flex-col gap-6'>
+          <h4 class='font-bold'>Product Type 1</h4>
+          <div class='product-img w-52 h-28 rounded-xl'><img
+              src='../img/product-type2.jpeg'
+              alt='product2'
+              class='rounded-xl object-cover w-full h-full'
+            /></div>
+          <div class='product-list flex flex-col gap-1'>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+          </div>
+        </div>
+
+        <div class='third-level-part flex flex-col gap-6'>
+          <h4 class='font-bold'>Product Type 2</h4>
+          <div class='product-img w-52 h-28 rounded-xl'><img
+              src='../img/product-type2.jpeg'
+              alt='product2'
+              class='rounded-xl object-cover w-full h-full'
+            /></div>
+          <div class='product-list flex flex-col gap-1'>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+          </div>
+        </div>
+
+        <div class='third-level-part flex flex-col gap-6'>
+          <h4 class='font-bold'>Product Type 3</h4>
+          <div class='product-img w-52 h-28 rounded-xl'><img
+              src='../img/product-type2.jpeg'
+              alt='product2'
+              class='rounded-xl object-cover w-full h-full'
+            /></div>
+          <div class='product-list flex flex-col gap-1'>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id='menu-item-3' class='overflow-hidden hidden relative pb-10 pt-24 transition-all duration-300'>
+      <div class='exit bg-white flex justify-end pb-8'>
+        <i class='icon icon-exit bg-black w-8 h-8'></i>
+      </div>
+      <div
+        class='second-level shrink-0 flex items-start gap-32 py-5 bg-white border-t border-black transition-all duration-700'
+      >
+        <ul class='second-level-ul w-1/5 flex flex-col justify-between gap-4'>
+          <li class='font-bold text-lg flex justify-between items-center cursor-pointer'><button>Product 1
+            </button></li>
+          <li class='font-bold text-lg flex justify-between items-center cursor-pointer'><button>Product 2
+            </button></li>
+          <li class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'><button>Product
+              3
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+          <li class='font-bold text-lg flex justify-between items-center cursor-pointer'><button>FAQ
+            </button></li>
+        </ul>
+        <div class='second-level-img flex flex-col gap-5'>
+          <h2 class='text-black text-lg font-bold'>We launched our new App</h2>
+          <div class='li-nav-img w-[400px] h-44'>
+            <img src='../img/nav-pic-1.webp' alt='picture one' class='w-full h-full object-cover rounded-2xl' />
+          </div>
+          <button
+            class='uppercase text-left bg-transparent w-max py-3 px-5 rounded-xl font-bold border-2 text-black border-orange-600'
+          >Read more</button>
+        </div>
+
+      </div>
+
+      <div
+        class='third-level w-full shrink-0 h-full absolute mt-[86px] left-0 top-[72px] transition-all duration-150 translate-x-full flex justify-start items-start gap-10 py-5 bg-white border-t border-black'
+      >
+        <div
+          class='back-arrow cursor-pointer font-bold absolute left-0 -top-[63px] items-center text-black gap-1 bg-white'
+        ><i class='icon icon-arrow-left bg-black w-8 h-8'></i>
+          Back to
+          <span class='back-pointer mr-6'> pointer</span>
+          <span class='current-pointer font-normal'> current</span></div>
+        <div class='third-level-part flex flex-col gap-6'>
+          <h4 class='font-bold'>Product Type 1</h4>
+          <div class='product-img w-52 h-28 rounded-xl'><img
+              src='../img/product-type2.jpeg'
+              alt='product2'
+              class='rounded-xl object-cover w-full h-full'
+            /></div>
+          <div class='product-list flex flex-col gap-1'>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+          </div>
+        </div>
+
+        <div class='third-level-part flex flex-col gap-6'>
+          <h4 class='font-bold'>Product Type 2</h4>
+          <div class='product-img w-52 h-28 rounded-xl'><img
+              src='../img/product-type2.jpeg'
+              alt='product2'
+              class='rounded-xl object-cover w-full h-full'
+            /></div>
+          <div class='product-list flex flex-col gap-1'>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+          </div>
+        </div>
+
+        <div class='third-level-part flex flex-col gap-6'>
+          <h4 class='font-bold'>Product Type 3</h4>
+          <div class='product-img w-52 h-28 rounded-xl'><img
+              src='../img/product-type2.jpeg'
+              alt='product2'
+              class='rounded-xl object-cover w-full h-full'
+            /></div>
+          <div class='product-list flex flex-col gap-1'>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id='menu-item-4' class='overflow-hidden hidden relative pb-10 pt-24 transition-all duration-300'>
+      <div class='exit bg-white flex justify-end pb-8'>
+        <i class='icon icon-exit bg-black w-8 h-8'></i>
+      </div>
+      <div
+        class='second-level shrink-0 flex items-start gap-32 py-5 bg-white border-t border-black transition-all duration-700'
+      >
+        <ul class='second-level-ul w-1/5 flex flex-col justify-between gap-4'>
+          <li class='font-bold text-lg flex justify-between items-center cursor-pointer'><button>Product 1
+            </button></li>
+          <li class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'><button>Product
+              2
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+          <li class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'><button>Product
+              3
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+          <li class='font-bold text-lg flex justify-between items-center cursor-pointer'><button>Product 4
+            </button></li>
+
+        </ul>
+        <div class='second-level-img flex flex-col gap-5'>
+          <h2 class='text-black text-lg font-bold'>We launched our new App</h2>
+          <div class='li-nav-img w-[400px] h-44'>
+            <img src='../img/nav-pic-1.webp' alt='picture one' class='w-full h-full object-cover rounded-2xl' />
+          </div>
+          <button
+            class='uppercase text-left bg-transparent w-max py-3 px-5 rounded-xl font-bold border-2 text-black border-orange-600'
+          >Read more</button>
+        </div>
+
+      </div>
+
+      <div
+        class='third-level w-full shrink-0 h-full absolute mt-[86px] left-0 top-[72px] transition-all duration-150 translate-x-full flex justify-start items-start gap-10 py-5 bg-white border-t border-black'
+      >
+        <div
+          class='back-arrow cursor-pointer font-bold absolute left-0 -top-[63px] items-center text-black gap-1 bg-white'
+        ><i class='icon icon-arrow-left bg-black w-8 h-8'></i>
+          Back to
+          <span class='back-pointer mr-6'> pointer</span>
+          <span class='current-pointer font-normal'> current</span></div>
+        <div class='third-level-part flex flex-col gap-6'>
+          <h4 class='font-bold'>Product Type 1</h4>
+          <div class='product-img w-52 h-28 rounded-xl'><img
+              src='../img/product-type2.jpeg'
+              alt='product2'
+              class='rounded-xl object-cover w-full h-full'
+            /></div>
+          <div class='product-list flex flex-col gap-1'>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 1 Link</a>
+          </div>
+        </div>
+
+        <div class='third-level-part flex flex-col gap-6'>
+          <h4 class='font-bold'>Product Type 2</h4>
+          <div class='product-img w-52 h-28 rounded-xl'><img
+              src='../img/product-type2.jpeg'
+              alt='product2'
+              class='rounded-xl object-cover w-full h-full'
+            /></div>
+          <div class='product-list flex flex-col gap-1'>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 2 Link</a>
+          </div>
+        </div>
+
+        <div class='third-level-part flex flex-col gap-6'>
+          <h4 class='font-bold'>Product Type 3</h4>
+          <div class='product-img w-52 h-28 rounded-xl'><img
+              src='../img/product-type2.jpeg'
+              alt='product2'
+              class='rounded-xl object-cover w-full h-full'
+            /></div>
+          <div class='product-list flex flex-col gap-1'>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+            <a class='font-normal' href='#' alt='link'>Product Type 3 Link</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</header>

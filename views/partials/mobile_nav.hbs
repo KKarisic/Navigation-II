@@ -1,0 +1,736 @@
+<header class='md:hidden'>
+
+  <div class='main-nav-mobile flex flex-col fixed top-0 z-30 w-full px-6 py-3 h-[76px] gap-3 bg-white duration-300'>
+    <div class='flex justify-between h-full'>
+      <div class='logo-nav relative'>
+        <div class='logo logo-img duration-300 logo-image pointer-events-none'>
+          <img src='../img/brand-logo.jpg' alt='this is logo' class='object-fit w-20 h-20 relative' />
+        </div>
+        <div class='arrow-up logo-nav-icons absolute bottom-1 left-1 cursor-pointer duration-150'>
+          <i class='icon icon-arrow-up bg-black w-6 h-6 flex justify-center'></i>
+        </div>
+        <div class='magnifier logo-nav-icons absolute bottom-1 left-1 cursor-pointer duration-150'>
+          <i class='icon icon-search bg-black w-6 h-6 flex justify-center'></i>
+        </div>
+      </div>
+
+      <div class='contact-resp-menu flex justify-between items-center gap-5'>
+        <div class='button contact-advice'><button
+            class='contact-advice-button uppercase px-4 h-[45px] rounded-xl font-bold text-sm border-2 border-orange-400'
+          >Contact &amp; advice</button></div>
+
+        <button id='toggleButton' class='resp-menu flex flex-col gap-1'>
+          <span class='rotate135 transition-all duration-150 relative block w-6 h-[3px] bg-black'></span>
+          <span class='middle transition-all duration-150 relative block w-6 h-[3px] bg-black'></span>
+          <span class='rotate45 transition-all duration-150 relative block w-6 h-[3px] bg-black'></span>
+        </button>
+      </div>
+    </div>
+    <form class='duration-300'>
+      <div class='search-form-mobile flex bg-gray-200 rounded-xl h-0 duration-300'>
+        <div class='flex w-1/5 min-w-[120px] max-w-full gap-1 input-wrapper'>
+          <div class='dropdown w-full'>
+            <select id='form-option' class='w-full h-full bg-gray-700 text-white rounded-l-lg' required>
+              <option class='' value='0'>All</option>
+              <option class='' value='1'>Selector 1</option>
+              <option class='' value='2'>Selector 2</option>
+              <option class='' value='3'>Selector 3</option>
+              <option class='' value='4'>Selector 4</option>
+            </select>
+          </div>
+        </div>
+        <div class='relative flex items-center flex-1 rounded-r-lg bg-gray-10'>
+          <input
+            type='text'
+            placeholder='Search'
+            class='w-full h-full pl-4 pr-8 text-xs bg-transparent placeholder:text-dark focus:outline-none'
+          />
+          <div class='icon-search absolute right-3 top-2 hidden'>
+            <i class='icon icon-search bg-black w-4 h-4'></i>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+  <div
+    class='drop-menu-mobile relative bg-white pt-[76px] h-0 w-full mr-10 overflow-y-hidden overflow-x-hidden dropdown-margin transition-all duration-300'
+  >
+
+    <nav class='navbar-mobile transition-all duration-150 font-bold border-t border-gray-300 py-10 mx-6'>
+      <ul class='flex flex-col justify-between gap-5 items-center'>
+        <li id='item-mobile-1' class='li-btn flex justify-between w-full cursor-pointer hover:text-orange-400'><button
+            class='flex justify-between items-center gap-2'
+          >Products</button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+        <li id='item-mobile-2' class='li-btn flex justify-between w-full cursor-pointer hover:text-orange-400'><button
+            class='flex'
+          >Applications &amp; Industries</button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+        <li id='item-mobile-3' class='li-btn flex justify-between w-full cursor-pointer hover:text-orange-400'><button
+            class='flex justify-between items-center gap-2'
+          >Services</button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+        <li id='item-mobile-4' class='li-btn flex justify-between w-full cursor-pointer hover:text-orange-400'><button
+            class='flex items-center gap-2'
+          ><i class='icon icon-wrench bg-black w-4 h-4'></i>For Professionals</button><i
+            class='icon icon-arrow-right bg-black w-8 h-8'
+          ></i></li>
+      </ul>
+    </nav>
+
+    {{! this is products }}
+    <div id='menu-item-mobile-1' class='overflow-hidden pt-0 transition-all duration-300 bg-purple-300 w-full px-6'>
+      {{! this is when it's clicked on products }}
+      <div
+        id='second-level-mobile-1'
+        class='second-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-second flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to main</span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+
+        <ul class='second-level-ul w-full flex flex-col justify-between h-full'>
+          <div class='flex flex-col justify-between gap-4'>
+            {{! these are button once clicked on product 1,2,3,4 }}
+            <li
+              id='second-level-mobile1-li-1'
+              class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'
+            ><button>Product 1
+              </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+            <li
+              id='second-level-mobile1-li-2'
+              class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'
+            ><button>Product 2
+              </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+            <li
+              id='second-level-mobile1-li-3'
+              class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'
+            ><button>Product 3
+              </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+
+            <li
+              id='second-level-mobile1-li-4'
+              class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'
+            ><button>Product 4
+              </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+          </div>
+          <div class=''>
+            <li class='font-bold text-lg text-white bg-gray-700 px-3 py-4 cursor-pointer'><button
+                class='flex items-center gap-3'
+              >
+                <i class='icon icon-search bg-white w-4 h-4'></i>
+                Product Finder</button>
+            </li>
+          </div>
+        </ul>
+
+      </div>
+      {{! this opens once it's clicked on product 1 }}
+      <div
+        id='third-level-mobile1-1'
+        class='third-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-third flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to <span class='back-to-second-level-button'>back to second level button</span></span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+
+        <div class='third-level-part-mobile flex flex-col gap-8'>
+          <div class='font-bold text-lg flex justify-between items-center cursor-pointer'>
+            <button class='third-btn-level-mobile1-1-1'>Modulare Systeme
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i>
+          </div>
+
+          <div class='flex flex-col gap-8'>
+            <div class='font-bold text-lg flex justify-between items-center cursor-pointer'>
+              <button class='third-btn-level-mobile1-1-2'>Integrierte Systeme
+              </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i>
+            </div>
+
+            <div class='flex flex-col items-start gap-1 text-lg'>
+              <button><span class='uppercase'>Kingfire</span> System</button>
+              <button><span class='uppercase'>Kingfire</span> System</button>
+              <button><span class='uppercase'>Kingfire</span> System</button>
+
+            </div>
+          </div>
+
+          <a href='#' rel='luftunge' class='pointer-events-none'>
+            <button class='font-bold text-base flex items-center gap-2 pointer-events-auto'>
+              Luftungen Ubersicht
+              <i class='icon icon-arrow-right bg-orange-400 w-8 h-8'></i>
+            </button></a>
+        </div>
+
+      </div>
+
+      {{! this opens once it's clicked on product 2 }}
+      <div
+        id='third-level-mobile1-2'
+        class='third-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-third flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to <span class='back-to-second-level-button'>back to second level button</span></span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+
+        <div class='third-level-part-mobile flex flex-col gap-8'>
+          <div class='font-bold text-lg flex justify-between items-center cursor-pointer'>
+            <button class='third-btn-level-mobile1-2-1'>Keramik
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i>
+          </div>
+
+          <div class='font-bold text-lg flex justify-between items-center cursor-pointer'>
+            <button class='third-btn-level-mobile1-2-2'>Edelstahl
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i>
+          </div>
+
+          <a href='#' rel='luftunge' class='pointer-events-none'>
+            <button class='font-bold text-base flex items-center gap-2 pointer-events-auto'>
+              Luftungen Ubersicht
+              <i class='icon icon-arrow-right bg-orange-400 w-8 h-8'></i>
+            </button></a>
+        </div>
+
+      </div>
+
+      {{! this opens once it's clicked on product 3 }}
+      <div
+        id='third-level-mobile1-3'
+        class='third-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-third flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to <span class='back-to-second-level-button'>back to second level button</span></span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+
+        <div class='third-level-part-mobile flex flex-col gap-8'>
+
+          <div class='flex flex-col gap-8'>
+            <div class='font-bold text-lg flex justify-between items-center cursor-pointer'>
+              <button class='third-btn-level-mobile1-3-1'>Luftungen
+              </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i>
+            </div>
+
+            <div class='flex flex-col items-start gap-1 cursor-pointer'>
+              <button class='font-normal'><span class='uppercase'>Aera Lvs</span></button>
+            </div>
+          </div>
+
+          <a href='#' rel='luftunge' class='pointer-events-none'>
+            <button class='font-bold text-base flex items-center gap-2 pointer-events-auto'>
+              Luftungen Ubersicht
+              <i class='icon icon-arrow-right bg-orange-400 w-8 h-8'></i>
+            </button></a>
+
+        </div>
+
+      </div>
+
+      {{! this opens once it's clicked on product 4 }}
+      <div
+        id='third-level-mobile1-4'
+        class='third-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-third flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to <span class='back-to-second-level-button'>back to second level button</span></span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+
+        <div class='third-level-part-mobile flex flex-col gap-8'>
+          <div class='font-bold text-lg flex justify-between items-center cursor-pointer'>
+            <button class='third-btn-level-mobile1-4-1'>Feinstaubabscheider
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i>
+          </div>
+
+          <a href='#' rel='luftunge' class='pointer-events-none'>
+            <button class='font-bold text-base flex items-center gap-2 pointer-events-auto'>
+              Luftungen Ubersicht
+              <i class='icon icon-arrow-right bg-orange-400 w-8 h-8'></i>
+            </button></a>
+
+        </div>
+
+      </div>
+
+      <div
+        id='fourth-level-mobile1-1-1'
+        class='fourth-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-fourth flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to <span class='back-to-third-level-button'>back to third level button</span></span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+        <button class='uppercase flex flex-col items-start gap-4'>Garden Firelplace</button>
+      </div>
+
+      <div
+        id='fourth-level-mobile1-1-2'
+        class='fourth-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-fourth flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to <span class='back-to-third-level-button'>back to third level button</span></span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+        <div class='flex flex-col items-start gap-4'>
+          <button class='uppercase'>Kingfire classico</button>
+          <button class='uppercase'>Kingfire gas</button>
+          <button class='uppercase'>Kingfire grande</button>
+          <button class='uppercase'>Kingfire kanto</button>
+          <button class='uppercase'>Kingfire lineare</button>
+          <button class='uppercase'>Kingfire rondo</button>
+        </div>
+
+      </div>
+
+      <div
+        id='fourth-level-mobile1-2-1'
+        class='fourth-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-fourth flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to <span class='back-to-third-level-button'>back to third level button</span></span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+        <div class='flex flex-col items-start gap-4'>
+          <button class='uppercase'>absolut</button>
+          <button class='uppercase'>absolut parat</button>
+          <button class='uppercase'>avant</button>
+          <button class='uppercase'>avant parat</button>
+          <button class='uppercase'>keranova</button>
+          <button class='uppercase'>absolut</button>
+          <button class='uppercase'>absolut parat</button>
+          <button class='uppercase'>avant</button>
+          <button class='uppercase'>avant parat</button>
+          <button class='uppercase'>keranova</button>
+          <button class='uppercase'>mulit</button>
+
+        </div>
+      </div>
+
+      <div
+        id='fourth-level-mobile1-2-2'
+        class='fourth-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-fourth flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to <span class='back-to-third-level-button'>back to third level button</span></span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+        <div class='flex flex-col items-start gap-4'>
+          <button class='uppercase'>asd</button>
+          <button class='uppercase'>hp 5000</button>
+          <button class='uppercase'>ics</button>
+          <button class='uppercase'>isc 5000</button>
+          <button class='uppercase'>ignis protect ultra</button>
+          <button class='uppercase'>kerastar</button>
+          <button class='uppercase'>lb 90 parat</button>
+          <button class='uppercase'>metaloterm ad</button>
+          <button class='uppercase'>metaloterm me</button>
+          <button class='uppercase'>metaloterm mf</button>
+          <button class='uppercase'>metaloterm ue</button>
+          <button class='uppercase'>lb 90 parat</button>
+          <button class='uppercase'>metaloterm ad</button>
+          <button class='uppercase'>metaloterm me</button>
+          <button class='uppercase'>metaloterm mf</button>
+          <button class='uppercase'>metaloterm ue</button>
+          <button class='uppercase'>lb 90 parat</button>
+          <button class='uppercase'>metaloterm ad</button>
+          <button class='uppercase'>metaloterm me</button>
+          <button class='uppercase'>metaloterm mf</button>
+          <button class='uppercase'>metaloterm ue</button>
+          <button class='uppercase'>lb 90 parat</button>
+          <button class='uppercase'>metaloterm ad</button>
+          <button class='uppercase'>metaloterm me</button>
+          <button class='uppercase'>metaloterm mf</button>
+          <button class='uppercase'>metaloterm ue</button>
+          <button class='uppercase'>lb 90 parat</button>
+          <button class='uppercase'>metaloterm ad</button>
+          <button class='uppercase'>metaloterm me</button>
+          <button class='uppercase'>metaloterm mf</button>
+          <button class='uppercase'>metaloterm ue</button>
+
+        </div>
+
+      </div>
+
+      <div
+        id='fourth-level-mobile1-4-1'
+        class='fourth-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-fourth flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to <span class='back-to-third-level-button'>back to third level button</span></span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+        <div class='flex flex-col items-start gap-4'>
+          <button>e <span class='uppercase'>puro</span></button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id='menu-item-mobile-2' class='overflow-hidden pt-0 transition-all duration-300 bg-purple-300 w-full px-6'>
+      <div
+        id='second-level-mobile-2'
+        class='second-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-second flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to main</span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+        <ul class='second-level-ul w-full flex flex-col justify-between gap-4'>
+          <li
+            id='second-level-mobile2-li-1'
+            class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'
+          ><button>Product 1
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+          <li
+            id='second-level-mobile2-li-2'
+            class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'
+          ><button>Product 2
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+
+        </ul>
+
+      </div>
+
+      {{! this opens once it's clicked on product 1 in applications }}
+      <div
+        id='third-level-mobile2-1'
+        class='third-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-third flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to <span class='back-to-second-level-button'>back to second level button</span></span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+
+        <div class='third-level-part-mobile flex flex-col gap-8'>
+
+          <div class='flex flex-col gap-8'>
+            <div class='font-bold text-lg flex justify-between items-center cursor-pointer'>
+              <button class='third-btn-level-mobile2-1-1'>Anwendungen
+              </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i>
+            </div>
+
+            <div class='flex flex-col items-start gap-1 text-lg'>
+              <button>Neubau</button>
+              <button>Prozesswarme</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      {{! this opens once it's clicked on product 2 in applications }}
+      <div
+        id='third-level-mobile2-2'
+        class='third-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-third flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to <span class='back-to-second-level-button'>back to second level button</span></span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+
+        <div class='third-level-part-mobile flex flex-col gap-8'>
+
+          <div class='flex flex-col gap-8'>
+            <div class='font-bold text-lg flex justify-between items-center cursor-pointer'>
+              <button class='third-btn-level-mobile2-2-1'>Branche
+              </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i>
+            </div>
+
+            <div class='flex flex-col items-start gap-1 text-lg'>
+              <button>Lebensmittelindustrie</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id='menu-item-mobile-3' class='overflow-hidden pt-0 transition-all duration-300 bg-purple-300 w-full px-6'>
+
+      <div
+        id='second-level-mobile-3'
+        class='second-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-second flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to main</span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+        <ul class='second-level-ul w-full flex flex-col justify-between gap-4'>
+          <li
+            id='second-level-mobile3-li-1'
+            class='font-bold text-lg flex justify-between items-center cursor-pointer'
+          ><button>Product 1
+            </button></li>
+          <li
+            id='second-level-mobile3-li-2'
+            class='font-bold text-lg flex justify-between items-center cursor-pointer'
+          ><button>Product 2
+            </button></li>
+          <li
+            id='second-level-mobile3-li-3'
+            class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'
+          ><button>Product 3
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+          <li
+            id='second-level-mobile3-li-4'
+            class='font-bold text-lg flex justify-between items-center cursor-pointer'
+          ><button>FAQ
+            </button></li>
+        </ul>
+
+      </div>
+
+      <div
+        id='third-level-mobile3-3'
+        class='third-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-third flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to <span class='back-to-second-level-button'>back to second level button</span></span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+
+        <div class='third-level-part-mobile flex flex-col gap-8'>
+
+          <div class='flex flex-col gap-8'>
+            <div class='font-bold text-lg flex justify-between items-center cursor-pointer'>
+              <button class='third-btn-level-mobile3-3-1'>Integrierte Systeme
+              </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i>
+            </div>
+
+            <div class='flex flex-col items-start gap-1 text-lg'>
+              <button>Flyer</button>
+              <button>Heizen mit Holz</button>
+              <button><span class='uppercase'>Kingfire</span> Mustersuche</button>
+              <button><span class='uppercase'>Kingfire</span> Inspirator</button>
+              <button>Nachhaltige Keramik</button>
+              <button>Schornestetin</button>
+              <button>Verkaufsberater-Suche</button>
+              <button>Verkaufsberater von Stahl</button>
+              <button>Wpjmgesimd bauen</button>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id='menu-item-mobile-4' class='overflow-hidden pt-0 transition-all duration-300 bg-purple-300 w-full px-6'>
+
+      <div
+        id='second-level-mobile-4'
+        class='second-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-second flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to main</span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+        <ul class='second-level-ul w-full flex flex-col justify-between gap-4'>
+          <li
+            id='second-level-mobile4-li-1'
+            class='font-bold text-lg flex justify-between items-center cursor-pointer'
+          ><button>Product 1
+            </button></li>
+          <li
+            id='second-level-mobile4-li-2'
+            class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'
+          ><button>Product 2
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+          <li
+            id='second-level-mobile4-li-3'
+            class='second-level-li font-bold text-lg flex justify-between items-center cursor-pointer'
+          ><button>Product 3
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i></li>
+          <li
+            id='second-level-mobile4-li-4'
+            class='font-bold text-lg flex justify-between items-center cursor-pointer'
+          ><button>Product 4
+            </button></li>
+        </ul>
+
+      </div>
+
+      <div
+        id='third-level-mobile4-2'
+        class='third-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-third flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to <span class='back-to-second-level-button'>back to second level button</span></span>
+
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+
+        <div class='third-level-part-mobile flex flex-col gap-8'>
+
+          <div class='flex flex-col gap-8'>
+            <div class='font-bold text-lg flex justify-between items-center cursor-pointer'>
+              <button class='third-btn-level-mobile4-2-1'>Online-Tools
+              </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i>
+            </div>
+
+            <div class='flex flex-col items-start gap-1 text-lg'>
+              <button><span class='uppercase'>3d bim/cad</span> Datenbank</button>
+              <button> Hohe uber Dach-Rechner</button>
+              <button><span class='uppercase'>parat</span> System</button>
+              <button>Schidel Profi</button>
+              <button>Querschnittsbemessung</button>
+
+            </div>
+          </div>
+
+          <a href='#' rel='luftunge' class='pointer-events-none'>
+            <button class='font-bold text-base flex items-center gap-2 pointer-events-auto'>
+              Luftungen Ubersicht
+              <i class='icon icon-arrow-right bg-orange-400 w-8 h-8'></i>
+            </button></a>
+
+        </div>
+      </div>
+
+      <div
+        id='third-level-mobile4-3'
+        class='third-level-mobile overflow-auto dropdown-margin duration-300 px-6 absolute top-[0] left-[100vh] w-full h-full bg-white flex flex-col gap-2 pt-[80px] z-10'
+      >
+        <div class='border-t border-gray-300 mt-0'></div>
+
+        <button class='back-to-third flex items-center gap-5 font-bold text-sm pb-2 duration-75 w-fit'>
+          <i class='icon icon-arrow-left flex justify-start items-start bg-black w-8 h-8'></i>
+          <span>Back to <span class='back-to-second-level-button'>back to second level button</span></span>
+        </button>
+
+        <div class='pt-8 pb-2 border-t border-gray-300'><span class='current-pointer font-normal text-sm text-gray-400'>
+            current</span></div>
+
+        <div class='third-level-part-mobile flex flex-col gap-8'>
+          <div class='font-bold text-lg flex justify-between items-center cursor-pointer'>
+            <button class='third-btn-level-mobile4-3-1'>Modulare Systeme
+            </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i>
+          </div>
+
+          <div class='flex flex-col gap-8'>
+            <div class='font-bold text-lg flex justify-between items-center cursor-pointer'>
+              <button class='third-btn-level-mobile4-3-2'>Integrierte Systeme
+              </button><i class='icon icon-arrow-right bg-black w-8 h-8'></i>
+            </div>
+
+            <div class='flex flex-col items-start gap-1 text-lg'>
+              <button><span class='uppercase'>Kingfire</span> System</button>
+              <button><span class='uppercase'>Kingfire</span> System</button>
+              <button><span class='uppercase'>Kingfire</span> System</button>
+
+            </div>
+          </div>
+
+          <a href='#' rel='luftunge' class='pointer-events-none'>
+            <button class='font-bold text-base flex items-center gap-2 pointer-events-auto'>
+              Luftungen Ubersicht
+              <i class='icon icon-arrow-right bg-orange-400 w-8 h-8'></i>
+            </button></a>
+        </div>
+
+      </div>
+    </div>
+
+    <div
+      class='topbar-mobile text-sm bg-gray-200 flex flex-col justify-start items-start gap-3 py-3 px-6 duration-300 w-full absolute bottom-0'
+    >
+      <button>Profil</button>
+      <button>Kaminofen</button>
+      <button>Karriere</button>
+      <button>Uber Schiedel</button>
+      <button>language</button>
+    </div>
+  </div>
+</header>
